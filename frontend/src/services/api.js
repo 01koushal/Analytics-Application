@@ -6,7 +6,7 @@ const api = axios.create({
 });
 
 function unwrap(response) {
-  return response.data.data;
+  return response.data;
 }
 
 export async function fetchSessions() {
