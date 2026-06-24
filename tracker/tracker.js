@@ -1,5 +1,7 @@
 (function () {
-  const DEFAULT_API_URL = "http://localhost:5000/api/events";
+  const DEFAULT_API_URL =
+  window.ANALYTICS_API_URL ||
+  "https://analytics-application-1.onrender.com/api/events";
   const SESSION_KEY = "analytics_session_id";
 
   function createSessionId() {
